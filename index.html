@@ -1,49 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>D'oh-mino's Pizza</title>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Arial+Narrow&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>D'oh-mino's Pizza</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Arial+Narrow&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Added skip navigation link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <div class="header">
-    <div class="banner">
-      🍕 D'OH-MINO'S PIZZA
-    </div>
-    <div class="nav">
-      <a href="#">Menu</a>
-      <a href="#">Locations</a>
-      <a href="#">Contact</a>
-    </div>
-  </div>
+    <!-- Updated header with semantic tags -->
+    <header class="header">
+      <h1 class="banner">🍕 D'OH-MINO'S PIZZA</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Locations</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <div class="info">
-    <p class="tagline">MISTAKES TASTE BETTER WHEN THEY'RE COVERED IN CHEESE</p>
-    <p class="description">
-      Welcome to D'oh-mino's, where we've cut corners in every possible way—except for the cheese. 
-      But at least our pizza is *probably* edible.
-    </p>
-    <a href="#" class="order-now">ORDER NOW</a>
-  </div>
+    <!-- Updated main content with semantic tags -->
+    <main id="main-content">
+      <section class="info">
+        <h2 class="tagline">
+          MISTAKES TASTE BETTER WHEN THEY'RE COVERED IN CHEESE
+        </h2>
+        <p class="description">
+          Welcome to D'oh-mino's, where we've cut corners in every possible
+          way—except for the cheese. But at least our pizza is *probably*
+          edible.
+        </p>
+        <a href="#" class="order-now">ORDER NOW</a>
+      </section>
 
-  <div class="main-content">
-    <div class="deal">
-      <img src="img/pizza-deal.jpg">
-      <p>Our most *questionable* deal yet! Get two large pizzas for the price of three.</p>
-    </div>
+      <section class="main-content">
+        <article class="deal">
+          <img
+            src="img/pizza-deal.jpg"
+            alt="A freshley baked pizza with a golden crust is placed on a wooden serving board. The pizza is topped with black olives, diced red bell peppers, and a drizzle of white sauce. Another pizza with different toppings is partially visible in the background on a wooden table. The setting suggest a casual dining atmoshphere."
+          />
+          <p>
+            Our most *questionable* deal yet! Get two large pizzas for the price
+            of three.
+          </p>
+        </article>
 
-    <div class="deal">
-      <img src="img/cold-pizza.jpg">
-      <p>Cold Pizza Sampler. Why wait until the morning to eat cold pizza?</p>
-  </div>
-  </div>
+        <article class="deal">
+          <img
+            src="img/cold-pizza.jpg"
+            alt="Two slice of pepperoni pizza with melted chees and diced green peppers in a cardboard box. The crust appears slightly charred, and some fries are visibile in the background. The pizza looks slightly greasy with a cripsy edge."
+          />
+          <p>
+            Cold Pizza Sampler. Why wait until the morning to eat cold pizza?
+          </p>
+        </article>
+      </section>
+    </main>
 
-  <footer>
-    <p>© 2025 D'oh-mino's Pizza - No refunds, no regrets</p>
-  </footer>
-
-</body>
+    <footer>
+      <p>© 2025 D'oh-mino's Pizza - No refunds, no regrets</p>
+    </footer>
+  </body>
 </html>

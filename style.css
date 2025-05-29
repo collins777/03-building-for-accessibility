@@ -1,22 +1,23 @@
 body {
-  font-family: 'Arial Narrow', Arial, Helvetica, sans-serif;
-  background: #f5f5f5;
-  color: #cccccc;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  background: #ffffff; /* Changed to white for higher contrast */
+  color: #000000; /* Black text for maximum readability */
   text-align: center;
   padding: 0;
   margin: 0;
+  font-size: 18px; /* Increased base font size */
 }
 
 .header {
-  background: #006491;
+  background: #004a70; /* Darker blue for better contrast */
   padding-top: 20px;
   padding-bottom: 20px;
   box-sizing: border-box;
 }
 
 .banner {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 32px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 36px; /* Increased banner font size */
   color: white;
 }
 
@@ -24,25 +25,36 @@ body {
   margin-top: 20px;
 }
 
-.nav a {
-  color: #cccccc;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 18px;
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav ul li {
   margin: 0 15px;
 }
 
+.nav ul li a {
+  color: #f0f0f0; /* Light text for better contrast */
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 20px; /* Increased navigation link font size */
+}
+
 .tagline {
-  font-size: 26px;
+  font-size: 28px; /* Increased tagline font size */
   font-weight: bold;
   text-transform: uppercase;
-  color: #bbbbbb;
+  color: #222222; /* Darker text for improved readability */
   margin: 30px 0 15px;
 }
 
 .description {
-  font-size: 16px;
-  color: #bbbbbb;
+  font-size: 18px; /* Increased description font size */
+  color: #333333; /* Slightly darker text for better contrast */
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.4;
@@ -51,15 +63,22 @@ body {
 .order-now {
   width: 200px;
   display: inline-block;
-  background: #E31837;
-  color: #801525;
+  background: #b3152f; /* Darker red for better contrast */
+  color: #ffffff; /* White text for maximum readability */
   padding: 12px 24px;
-  font-size: 18px;
+  font-size: 20px; /* Increased order-now button font size */
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;
   border-radius: 3px;
   margin-top: 30px;
+}
+
+/* Added hover styles for the order-now link */
+.order-now:hover {
+  background: #c3152f; /* Slightly darker red for hover effect */
+  color: #ffffff; /* Ensure text remains readable */
+  text-decoration: underline; /* Add underline for emphasis */
 }
 
 .main-content {
@@ -85,7 +104,30 @@ body {
 }
 
 .deal p {
-  font-size: 12px;
+  font-size: 16px; /* Increased deal description font size */
   font-weight: bold;
-  color: #bbbbbb;
+  color: #444444; /* Improved contrast for deal descriptions */
+}
+
+/* Added styles for skip navigation link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #006491;
+  color: white;
+  padding: 8px 12px;
+  z-index: 100;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Added focus styles for keyboard accessibility */
+a:focus,
+button:focus {
+  outline: 2px solid #e31837; /* Visible focus indicator */
+  outline-offset: 2px;
 }
